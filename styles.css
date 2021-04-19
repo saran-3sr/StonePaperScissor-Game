@@ -14,3 +14,21 @@ body{
   align-items: center;
   justify-content: center;
 }
+h3{
+  font-family: 'Dancing Script', cursive;
+}
+#heading{
+  font-family: 'Pacifico', cursive;
+}
+#rules{
+  font-family: 'Righteous', cursive;
+}
+.Stone{
+  background-color:#a6f0c6;
+}
+.Paper{
+  background-color:#a6f0c6;
+}
+.Scissor{
+  background-color:#a6f0c6;
+}
