@@ -24,7 +24,7 @@ function usercomp(k) {
       randomcomp = Math.floor(Math.random() * 3 + 1);
       if (randomcomp == k)
         document.querySelector('#heading').innerHTML = "Its a Draw";
-      else if (randomcomp < k)
+      else if((gameuse[randomcomp]===gameuse[0]&&gameuse[k]===gameuse[1])||(gameuse[randomcomp]===gameuse[1]&&gameuse[k]===gameuse[2])||(gameuse[randomcomp]===gameuse[2]&&gameuse[k]===gameuse[0]))
       {
         document.querySelector('#heading').innerHTML = "User Wins";
         userscore++;
@@ -40,19 +40,20 @@ function usercomp(k) {
      {
        if (compscore > userscore)
        {
-         winner = "Computer Wins the Game"
+         winner = "Computer Wins the Game";
        }
        else
        {
-         winner = "User Wins the Game"
+         winner = "User Wins the Game";
        }
        document.querySelector('#heading').innerHTML = winner;
+       document.querySelector('#rules').innerHTML = "Refresh the page to play again😊❤";
      }
 
   }
   else
   {
-    
+
   }
 
 }
