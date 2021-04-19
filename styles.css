@@ -1,0 +1,16 @@
+body{
+  background-color: #ffc7c7;
+  text-align: center;
+}
+.box{
+  border: 3px;
+  border-style: double;
+  padding: 5%;
+  width: auto;
+  margin: auto;
+}
+.html{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
