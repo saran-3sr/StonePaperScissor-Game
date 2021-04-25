@@ -4,13 +4,13 @@ var userscore = 0;
 var gameuse = ["Stone", "Paper", "Scissor"];
 var winner;
 
-for (var i = 0; i < document.querySelectorAll('.btn').length; i++) {
-  document.querySelectorAll('.btn')[i].addEventListener("click", inputvalue);
+for (var i = 0; i < document.querySelectorAll('.key').length; i++) {
+  document.querySelectorAll('.key')[i].addEventListener("click", inputvalue);
 
 }
 
 function inputvalue() {
-  for (var k = 0; k < document.querySelectorAll('.btn').length; k++) {
+  for (var k = 0; k < document.querySelectorAll('.key').length; k++) {
     if (gameuse[k] == this.name) {
       usercomp(k);
       break;
@@ -48,6 +48,9 @@ function usercomp(k) {
        }
        document.querySelector('#heading').innerHTML = winner;
        document.querySelector('#rules').innerHTML = "Refresh the page to play again😊❤";
+       setTimeout(function () {
+        alert("Refresh The Page to Play again") ;
+      }, 300);
      }
 
   }
